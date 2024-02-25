@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?id=1RKbYmTE21Jb4VfG3xQG8ejd2MPB0qhNk" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --hactive-color:rgb(255, 251, 192);
+  --hl-color:rgb(255, 7, 110);
+  --hl2-color:rgb(172, 26, 87);
+  --orange-color:rgb(255, 77, 7);
+  --orange2-color:rgb(185, 67, 20);
+  --green-color:rgb(0, 189, 63);
+  --green2-color:rgb(14, 122, 50);
+  --light-color: #e5e9eb;
+  --dark-color: #212529;
+  --gray-400: #ced4da;
+  --test-br: 1px solid red;
+   --gray-700: #495057;
+}
+/*--------------HTML element--------------*/
+  body{
+    justify-content: center;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    color: rgb(255, 7, 110,.1);
+  }
+  a:link, a:visited ,a:active
+  {
+    text-decoration: none;
+    color:var(--hl-color) ;
+    /*animation: firstart 2s;
+    animation-iteration-count: infinite; */
+
+  }
+  a:hover
+  {
+    color:var(--hactive-color) ;
+  }
+  ul
+  {list-style-type: none;}
+  li 
+  {
+    padding-top: 1.2rem;
+    b{
+      color: var(--hl-color);}
+    }
+  img.img-cir{
+        height: 200px;
+        width: auto;
+        border-radius: 50%;
+        border: 5px solid var(--light-color);
+  }
+
+  footer{ 
+    font-family: "Nunito Sans";
+    color: var(--light-color);
+
+  }
+/*--------------HTML element--------------*/
+/*--------------bootrap element--------------*/
+  .jumbotron 
+  {
+    color: var(--hl-color);
+    height: 50rem;
+    padding-top: 250px;
+    text-transform: uppercase;
+    font-size: 10rem;
+    font-weight: 700;
+    text-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      span{
+        color: transparent;
+        background-color:var(--hl2-color);
+        background-clip: text;
+        text-shadow: 0px 2px 3px var(--hl-color);
+      }img{
+        height: 200px;
+        width: auto;
+        border-radius: 50%;
+        border: 5px solid var(--light-color);
+      }
+  }
+  .container{
+    justify-content: center;
+  }
+  
+/*--------------bootrap element--------------*/
+/*--------------font--------------
+  .nunito-sans-sysfont {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+/*--------------font--------------*/
+  .link-box{
+      padding-top: 3rem;
+      font-family: "Nunito Sans";
+      font-weight: 400;
+      justify-content: center;
+      width: 50rem;
+      a{
+          color: var(--light-color);
+      }
+      a:link, a:visited ,a:active{
+        color: var(--light-color);
+      }
+      .link-box-title{
+          width: 100%;
+        }
+      .link-box-content{
+          display: flex;
+          align-content: center;
+          height: 10rem;
+          box{
+  
+           /* background-color: var(--hl2-color);*/
+            display: flex;
+            align-content: center;
+
+          }
+          box:hover{
+              opacity: .5;
+              img{
+                   opacity: .5;
+              }
+            }
+      .link-box-text{
+          display: block;
+          text-align: left;
+          padding-left: 20px;
+          padding:30px;
+          font-size: 15px;
+
+
+        }
+      }
+      .img-icon{
+          width: 20rem;
+          height: 10rem;
+          background-repeat: no-repeat;
+          background-position-x: center;
+          background-position-y: center;
+          background-size: 5rem ;
+          background-color: var(--hl2-color);
+        }
+  }
+.cont-style-1
+{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 50rem;
+  margin: 0 auto;
+  font-family:"Nunito Sans";
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--light-color);
+  text-align: justify;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: cover 7% 30%;
+  scale:0;
+  p{
+      padding-top: 1.5rem;
+
+    }
+  p, li{opacity: 0;
+    scale: 0;
+      animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: cover .25% 20%;}
+}
+.cont-style-2
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 70rem;
+    margin: 0 auto;
+}
+.head{
+    color: var(--hl-color);
+    font-size: 2rem;
+    text-align:left;
+    font-weight: bolder;
+    border-bottom: 3px solid var(--hl-color);
+  }
+.cont-style-2-head
+  {
+    font-size: 2.5rem;
+    color:rgba(255, 7, 110,1);
+    text-align:center;
+    font-weight: bolder;
+    border-bottom:3px solid rgba(255, 7, 110,1);
+
+  }
+.cx{
+  background-color:rgba(255, 7, 110,1);
+  text-align: center;
+  animation: fade-in linear forwards;
+      animation-timeline: view();
+      animation-range: cover .25% 20%;}
+.progress
+  {
+    background-color: #292424;
+  }
+.sub{
+      color: var(--light-color);
+      font-size: 2rem;
+    }
+.infolink{
+    font-size:1rem;
+    justify-content: space-evenly;
+    display: flex;    
+    color: var(--light-color);
+    padding-left:10rem;
+    padding-right:10rem;
+  }
+.cover{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap:0px;
+  }
+.colcontent{
+
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    img{
+      width: 4.5rem;
+    } 
+  }
+.img-cont
+    {
+      scale: 0;
+      padding: 3px; 
+      background-color:var(--light-color);
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      border: 5px solid var(--hl-color);
+      animation: show 3s forwards;
+      animation-timeline: view();
+      animation-range: cover 10% 20%;
+    }
+  #rtest
+  {
+    border:solid 1px turquoise;
+  }
+  .fa{
+    font-size:5rem;
+  }
+  .fa:hover
+  {
+     color:red;
+     animation: shake 0.5s;
+     animation-iteration-count: infinite;
+  }
+/*--------------animation--------------*/
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+}
+
+@keyframes show {
+  to{scale: 1;}
+}
+/*  @keyframes scroll-watcher
+  {
+      to { opacity: 1; 
+        width: 100px;}
+  }*/
+  @keyframes fade-in-bar {
+    to{width: 100px;}
+  }
+  @keyframes  fade-in {
+       to {scale: 1; opacity: 1;}
+      }
+  @keyframes firstart {
+
+0% {color:rgba(255, 7, 110, 0.15)};
+5% {color:rgba(255, 7, 110, 0.2)};
+10% {color:rgba(255, 7, 110, 0.3)};
+15% {color:rgba(255, 7, 110, 0.4)};
+20% {color:rgba(255, 7, 110, 0.5)};
+25% {color:rgba(255, 7, 110, 0.6)};
+30% {color:rgba(255, 7, 110, 0.7)};
+35% {color:rgba(255, 7, 110, 0.8)};
+40% {color:rgba(255, 7, 110, 0.9)};
+45% {color:rgba(255, 7, 110, 1)};
+50% {color:rgba(255, 7, 110, 1)};
+55% {color:rgba(255, 7, 110, 1)};
+60% {color:rgba(255, 7, 110, 0.9)};
+65% {color:rgba(255, 7, 110, 0.8)};
+70% {color:rgba(255, 7, 110, 0.7)};
+75% {color:rgba(255, 7, 110, 0.6)};
+80% {color:rgba(255, 7, 110, 0.5)};
+85% {color:rgba(255, 7, 110, 0.4)};
+90% {color:rgba(255, 7, 110, 0.3)};
+95% {color:rgba(255, 7, 110, 0.2)};
+100% {color:rgba(255, 7, 110, 0.15)};
+
+
+  }
+
+/*--------------animation--------------*/
+/*--------------card--------------*/
+  .card-cover {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .card-custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: #000000;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin:30px;
+    color: #e5e9eb;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  .card-custom-image {
+    grid-area: image;
+    /*background: url("img/img1.jpg");*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: 325px;
+    background-position-x: center;
+    background-position-y:center ;
+    
+  }
+  .card-custom-text {
+    grid-area: text;
+    margin: 25px;
+    transform: translateZ(30px);
+  }
+  .card-custom-text .date {
+    color: var(--hl-color);
+    font-size:13px;
+  }
+  .card-custom-text p {
+    /*color: grey;*/
+    
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-custom-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  .card-custom-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--hl-color);
+  }
+  .card-custom-stats .stat {
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  .card-custom-stats .border {
+    border-left: 1px solid var(--hl2-color); 
+    border-right: 1px solid var(--hl2-color);
+  }
+  .card-custom-stats .value{
+    font-size:22px;
+    font-weight: 500;
+
+  }
+  .valueicon
+  {
+    width: 30px;
+    transform: translateZ(30px);
+  }
+  .card-custom-stats .value sup{
+    font-size:12px;
+  }
+  .card-custom-stats .type{
+    font-size:11px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .t-c
+  {
+    text-align: center;
+  }
+/*--------------card--------------*/
+
+
+/*card2*/
+  .card-custom-image.card2 {
+    background: url("img2.jpg");
+    background-size: cover;
+  }
+  .card-custom-text.card2 .date {
+    color: var(--orange-color);
+  }
+
+  .card-custom-stats.card2 .border {
+    border-left: 1px solid var(--orange2-colo);
+    border-right: 1px solid var(--orange2-colo);
+  }</style>
+    <title>Van Dupio's Curriculum Vitae</title>
+</head>
+<body style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://i.ibb.co/qF6dbHk/metal.jpg');">
+    <div class="jumbotron"> 
+        <div>
+            <center>
+                <span>V A N</span> <img  src="https://media.licdn.com/dms/image/C5103AQH1YbIOM4Bmyw/profile-displayphoto-shrink_800_800/0/1566260384849?e=1710979200&v=beta&t=LjAMUi_-iSsLHI4MoyQLIYuHXqeLeTonot9PPmZvd1o"><span> DUPIO</span>
+            </center>
+        </div>
+        <div>
+            <center>
+                <div class="sub" >
+                    Web Developer / Web designer / IT Support Specialist
+                </div>
+            </center>
+        </div>
+
+    </div>
+   
+    <div class="infolink">
+        <div style="display:flex; align-items:center; justify-content: left;">
+            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                <a href="tel:+639668846962">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </a>
+            </div>
+            <div>
+               +63 966 884 6962
+            </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content: left;">
+            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+                Claytown Subdivision, Daro, Dumaguete City 6200, Negros Oriental, Philippines
+            </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content: left;">
+            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                <a href="mailto:vandupio@gmail.com"> 
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <div>
+               vandupio@gmail.com
+            </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content: left;">
+            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                <a href="www.linkedin.com/in/van-dupio-95686887" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <div>
+               www.linkedin.com/in/van-dupio-95686887
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <div class="cont-style-1">
+            <div class="head">Recent</div>
+            <p>
+                Formerly serving as a Front-end Developer and Technical Support Associate with Hotelchamp  since 2021, I have played a pivotal role in enhancing the online presence and functionality of the host hotel's website. My contributions include strategic advertisement creation, proactive troubleshooting, innovative script development, comprehensive performance tracking, creative web design, agile updates, and improvements, as well as effective Search Engine Optimization (SEO). I have collaborated cross-functionally to align website and product strategies with overarching business objectives, showcasing a commitment to delivering high-quality results and staying abreast of industry trends.
+            </p>
+        </div>
+        <div class="cont-style-1">
+            <div class="head">2021 - 2024<br>
+                Sophi, Dumaguete<br>
+                Front-end Developer / Technical Support Associate
+            </div>
+            <p>
+                As a Web Developer and Technical Support Associate at Sophi - Dumaguete, I played a pivotal role in enhancing the online presence and functionality of the host hotel website. My key responsibilities included:</p>
+                <ul>
+                    <li><b>Strategic Advertisement Creation</b> : Developed and executed targeted promotional advertisements to enhance the visibility and engagement of the host hotel website.</li>
+                    <li><b>Proactive Troubleshooting</b> : Ensured seamless website functionality by identifying and resolving any technical issues promptly, ensuring optimal user experience.</li>
+                    <li><b>Innovative Script Development</b> : Created dynamic HTML and jQuery scripts for impactful email campaigns, contributing to effective marketing strategies.</li>
+                    <li><b>Comprehensive Performance Tracking</b> : Prepared detailed monthly revenue reports, providing insights into website and product performance, and facilitating data-driven decision-making.</li>
+                    <li><b>Creative Web Design</b> : Designed and developed captivating web pages and product pages using the versatile DUDA platform, contributing to an enriched user interface.</li>
+                    <li><b>Agile Updates and Improvements</b> : Implemented regular updates and improvements to existing web pages and product pages, ensuring that the website maintained a contemporary and competitive edge.</li>
+                    <li><b>Search Engine Optimization (SEO)</b> : Applied optimization techniques to enhance the website's visibility on search engines, positively impacting organic traffic and user experience.</li>
+                    <li><b>Cross-Functional Collaboration</b> : Collaborated effectively with cross-functional teams to align website and product strategies with overarching business objectives.</li>
+                    <li><b>Front-End Development</b> : Led front-end web development efforts, focusing on creating visually appealing and user-friendly interfaces.</li>
+                </ul>
+                <p>This role not only honed my technical skills but also allowed me to contribute to the strategic growth of the host hotel's online presence. My commitment to delivering high-quality results and staying at the forefront of industry trends has been a constant throughout my tenure at Sophi - Dumaguete.
+            </p>  
+        </div>
+        <div class="cont-style-1">
+            <div class="head">2016-2018<br>
+                Sea Havens Business Solution<br>
+                E-commerce Operations Manager
+            </div>
+            <p>In my role as the E-commerce Operations Manager at Sea Havens Business Solution, I held a multifaceted position where I contributed significantly to the success of our e-commerce platform. My key responsibilities included:</p>
+            <ul>                            
+                <li><b>Strategic Inventory and Pricing Management</b> : Orchestrated the efficient management of inventory and pricing on our e-commerce platform, ensuring a competitive edge in the market.</li><li><b>Competitor Price Analysis</b> : Conducted thorough analyses of competitor prices and pricing strategies, enabling proactive adjustments to maintain competitiveness.</li><li><b>Market Research for Growth</b> : Led comprehensive market research initiatives to identify emerging trends and capitalize on opportunities for sustainable growth.</li><li><b>Data-Driven Decision-Making</b> : Analyzed sales data meticulously, identifying areas for improvement in pricing strategies and inventory management to enhance overall performance.</li><li><b>Collaborative Promotions and Sales Strategies</b> : Worked closely with the marketing team to develop and execute impactful promotions and sales strategies, driving customer engagement and revenue growth.</li><li><b>Customer-Centric Approach</b> : Collaborated seamlessly with customer support teams to ensure prompt and satisfactory resolution of customer inquiries, fostering positive customer experiences.</li><li><b>Order Processing and Fulfillment Management</b> : Oversaw the end-to-end process of order processing and fulfillment, maintaining efficient coordination with suppliers and shipping companies as needed.</li><li><b>Continuous Platform Enhancement</b> : Spearheaded ongoing evaluations and improvements to the e-commerce platform and related systems and processes, ensuring optimal functionality and user experience.</li><li><b>Insightful Reporting</b> : Prepared regular reports on sales, inventory, and pricing, providing valuable insights to the management team for informed decision-making.</li>
+            </ul>
+            <p>This role not only allowed me to showcase my organizational and analytical skills but also enabled me to contribute to the strategic development of the e-commerce division. My commitment to operational excellence and my proactive approach to challenges were key drivers in the success of our e-commerce initiatives at Sea Havens Business Solution.</p>
+        </div>
+        <div class="cont-style-1">
+            <div class="head">Web Sites I have Worked On</div>
+           
+            <div class="link-box">
+                <div class="link-box-title">
+                    <h3>Hotel Villa Bandama Golf</h3>
+                </div>
+                <a href="https://www.hotelvillabandama.com/" target="_blank">
+                    <div class="link-box-content mt-4">
+                        <div style="width:3rem;"></div>
+                        <box>
+                            <div class="img-icon" style="background-image:url('https://irp.cdn-website.com/a6e552a4/dms3rep/multi/image+2.svg');">
+                            </div>
+                            <div class="link-box-text">
+                                <h5>Hotel Villa Bandama Golf</h5>Welcome to Hotel Villa Bandama Golf, an idyllic retreat nestled in the lush hills of Gran Canaria, Spain. Our charming hotel is surrounded by stunning ...
+                            </div>
+                        </box>
+                    </div>
+                </a>
+            </div>
+            <div class="link-box">
+                <div class="link-box-title">
+                    <h3>Cross Hotels & Resorts</h3>
+                </div>
+                <a href="https://www.crosshotelsandresorts.com/?locale=en" target="_blank">
+                    <div class="link-box-content mt-4">
+                        <div style="width:3rem;"></div>
+                        <box>
+                            <div class="img-icon" style="background-image:url('https://lirp.cdn-website.com/354a2786/dms3rep/multi/opt/CHR_4C-Logo-FullGradients-L-640w.png')">
+                            </div>
+                            <div class="link-box-text">
+                                <h5>Cross Hotels & Resorts</h5>crosshotelsandresorts.com  #CrossHotels #LuxuryByDesign #CrossHotelsandResorts #ChristmasInPattaya. Button. Savor the season at Cross Chiang Mai ...
+                            </div>
+                        </box>
+                    </div>
+                </a>
+            </div>
+            <div class="link-box">
+                <div class="link-box-title">
+                    <h3>Crystal Hotels</h3>
+                </div>
+                <a href="https://https://www.crystalhotels.co.uk" target="_blank">
+                    <div class="link-box-content mt-4">
+                        <div style="width:3rem;"></div>
+                        <box>
+                            <div class="img-icon" style="background-image:url('https://lirp.cdn-website.com/a8d6c19c/dms3rep/multi/opt/ch-WHITE_Crystal-Hotels-144w.png')">
+                            </div>
+                            <div class="link-box-text">
+                                <h5>Crystal Hotels - 3-star hotels in Central London</h5>Crystal Hotels have 4 properties which are all 3*hotels located in Paddington, Bayswater and Earls Court. Brunel, Duke of Leinster and Kensington Court.
+                            </div>
+                        </box>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="cont-style-1">
+            <div class="head">languages Proficiency</div>
+            <ul>
+                <li>
+                        English
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  100%">Written</div>
+                        </div>
+                        <br/>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  100%;">Spoken</div>
+                        </div>
+                    </li>
+                    <br/>
+                    <li>
+                        Filipino
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  85%">Written</div>
+                        </div>
+                        <br/>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  90%">Spoken</div>
+                        </div>
+                    </li>
+                    <br/>
+                    <li>
+                        Cebuano
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  95%">Written</div>
+                        </div>
+                        <br/>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  95%">Spoken</div>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        <div class="cont-style-1">
+            <div class="head">Operating System</div>
+                <ul>
+                    <li>Linux
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width:  85%">Above Average</div>
+                        </div>
+                    </li>
+                    <li>Window 11
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width: 85%">Above Average</div>
+                        </div>
+                    </li>
+                    <li>Mac
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="cx" style="width: 75%">Average</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <div class="cont-style-1">  
+                    <div class="head">Computer languages and Framework</div>
+                    <ul>
+                        <li>Assembly 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>C++ 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>Visual Basic 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>CSS
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 95%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>HTML5 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 100%">Advance</div>
+                            </div>
+                        </li>
+                        <li>Javascript 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 100%">Advance</div>
+                            </div>
+                        </li>
+                        <li>PHP 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 100%">Advance</div>
+                            </div>
+                        </li>
+                        <li>Object Oriented Programming 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>Full Stack ReactJS
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 85%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>Wordpress
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>Duda
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont-style-1">    
+                    <div class="head">Adobe Software</div> 
+                    <ul>                  
+                        <li>Adobe Photoshop
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 85%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>Adobe Illustrator
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 85%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>Adobe After-effects
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>Adobe Audition
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont-style-1">
+                    <div class="head">Microsoft</div>
+                    <ul>                
+                        <li>Microsoft Word 
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 100%">Advance</div>
+                            </div>
+                        </li> 
+                        <li>Microsoft Excel
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 85%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>Power Point
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 50%">Average</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="cont-style-1">
+                    <div class="head">Google & Analytics</div> 
+                    <ul>
+                        <li>Goole Sheets
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 85%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>Goole Docs
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 85%">Above Average</div>
+                            </div>
+                        </li>
+                        <li>Google Analytics GA4
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>Google Apps Script
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                        <li>Adobe Analytics
+                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="cx" style="width: 75%">Average</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+
+        <!--a href="+639668846962"><i class="fa-solid fa-mobile-screen-button"> <span style="font-size:10px;">+63 966 884 6962</span></i>
+        </a>
+        <a href="https://www.facebook.com/van.dupio" target="_blank"><i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="www.linkedin.com/in/van-dupio-95686887" target="_blank"><i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:vandupio@gmail.com"><i class="fa-brands fa-google"></i>
+        </a-->
+<div class="cont-style-2 mt-md-5 mt-sm-1"> 
+    <div class="cont-style-2-head" >CERTIFICATE, WORKSHOP AND SEMINAR</div>
+</div>
+    <div class="cover">
+        <div class="row p-0 m-0" >
+            <div class="col">
+                <div class="card-cover">
+                    <div class="card-custom" >
+                        <div class="card-custom-image" style="background-image: url('https://i.ibb.co/Lgd4k56/cert1.png');"></div>
+                        <div class="card-custom-text" >
+                            <h4>
+                                Basic Designing using Adobe Illustrator
+                            </h4>
+                            <p>
+                                Introductions and basic concept of Adobe Illustrator
+                            </p>
+                        </div>
+                        <div class="card-custom-stats">
+                            <div class="stat">
+                                <div class="value"><img src="img/ai.png" class="valueicon"></div>
+                                <div class="type">illustrator</div>
+                            </div>
+                            <div class="stat border">
+                              <div class="value">Adobe</div>
+                              <div class="type">software</div>
+                            </div>
+                            <div class="stat">
+                              <div class="value"></div>
+                              <div class="type">Seminar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-cover">
+                    <a href="https://i.pinimg.com/564x/3d/c5/06/3dc5062a090ca80f19da54b86e86f6bc.jpg">
+                        <div class="card-custom">
+                            <div class="card-custom-image" style="background-image:  url('https://i.ibb.co/gWPQKmK/235-6-3.jpg');"></div>
+                            <div class="card-custom-text" >
+                                <h4>
+                                  Learn Photoshop Seminar & Workshop
+                                </h4>
+                                <p>
+                                  introduction and basic knowlege of Adobe Photoshop
+                                </p>
+                            </div>
+                            <div class="card-custom-stats">
+                                <div class="stat">
+                                    <div class="value"><img src="img/ps.png" class="valueicon"></div>
+                                    <div class="type">Photoshop</div>
+                                </div>
+                                <div class="stat border">
+                                    <div class="value">Adobe</div>
+                                    <div class="type">software</div>
+                                </div>
+                                    <div class="stat">
+                                    <div class="value"></div>
+                                    <div class="type">Seminar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-cover">
+                    <div class="card-custom">
+                        <div class="card-custom-image" style="background-image:  url('https://i.ibb.co/xzMGvwg/cert2.jpg');"></div>
+                        <div class="card-custom-text" >
+                            <h4>
+                                < CODERUN >
+                            </h4>
+                            <p>
+                                Programming Competition  
+                            </p>
+                        </div>
+                        <div class="card-custom-stats">
+                            <div class="stat">
+                                <div class="value"><img src="img/php.png" class="valueicon"></div>
+                                <div class="type">PHP</div>
+                            </div>
+                            <div class="stat border">
+                                <div class="value">PHP</div>
+                                <div class="type">scripting</div>
+                            </div>
+                            <div class="stat">
+                                <div class="value"></div>
+                                <div class="type">Competition</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <a href="https://www.coursera.org/account/accomplishments/verify/LK4FKK7GM24Q?utm_campaign=sharing_cta&utm_content=cert_image&utm_medium=certificate&utm_product=course&utm_source=ln">
+                    <div class="card-cover">
+                        <div class="card-custom">
+                            <div class="card-custom-image" style="background-image:  url('https://i.ibb.co/t28Jr4J/boostfrontend.jpg');">
+                            </div>
+                            <div class="card-custom-text" >
+                                <h4>
+                                  Front-End Web Ui Framework and Bootstrap 4
+                                </h4>
+                                <p>
+                                  Course Certificate  
+                                </p>
+                            </div>
+                            <div class="card-custom-stats">
+                                <div class="stat">
+                                  <div class="value">
+                                    <img src="img/react.png" class="valueicon"></div>
+                                  <div class="type">React</div>
+                                </div>
+                                <div class="stat border">
+                                  <div class="value">React</div>
+                                  <div class="type">scripting</div>
+                                </div>
+                                <div class="stat">
+                                  <div class="value">Coursera</div>
+                                  <div class="type">Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.coursera.org/account/accomplishments/verify/XZDEQ3MQA4L3?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course">
+                    <div class="card-cover">
+                        <div class="card-custom">
+                            <div class="card-custom-image" style="background-image:  url('https://i.ibb.co/G5ZKvhr/boostfrontend2.jpg');">
+                            </div>
+                            <div class="card-custom-text" >
+                                <h4>
+                                  Front-End Web Development with React
+                                </h4>
+                                <p>
+                                  Course Certificate  
+                                </p>
+                            </div>
+                            <div class="card-custom-stats">
+                                <div class="stat">
+                                    <div class="value">
+                                        <img src="img/react.png" class="valueicon"></div>
+                                    <div class="type">React</div>
+                                </div>
+                                <div class="stat border">
+                                    <div class="value">React</div>
+                                    <div class="type">scripting</div>
+                                </div>
+                                <div class="stat">
+                                  <div class="value">Coursera</div>
+                                  <div class="type">Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>      
+        </div>
+    </div>
+</div>
+<div class="cont-style-2 mt-md-5 mt-sm-1"> 
+    <div class="cont-style-2-head">Activly Worked With the Following Libraries and Frameworks</div>
+     <div class="row pt-5">
+        <div class="col col-md-3 justify-items-center align-items-center colcontent" >
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <img src="https://cenh.world/wp-content/uploads/2022/05/three-js-logo.png" class="fa"> 
+                </div>
+                <div class="t-c text-light">
+                    three.js
+                </div>
+            </div>        
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-laravel fa"></i>   
+                </div>
+                <div class="t-c text-light">
+                    Laravel
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-square-js fa"></i> 
+                </div>
+                <div class="t-c text-light">
+                    JavaScript
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-python fa"></i>
+                </div>
+                <div class="t-c text-light">
+                    Python
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-html5 fa"></i>
+                </div>
+                <div class="t-c text-light">
+                    HTML 5
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-css3-alt fa"></i>
+                </div>
+                <div class="t-c text-light">
+                    css
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-bootstrap fa"></i>
+                </div>
+                <div class="t-c text-light">
+                    Bootstrap
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-sass fa"></i>
+                </div>
+                <div class="t-c text-light">
+                    Sass
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzODguMTIgMjY0LjI5IiB3aWR0aD0iMzg4LjEyIiBoZWlnaHQ9IjI2NC4yOSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCI+CiA8ZyBkaXNwbGF5PSJpbmxpbmUiIHRyYW5zZm9ybT0ibWF0cml4KDEuODE4OTI1NywwLDAsMS44MjM3NzQ2LC04Mi4xNDIxMSwtNjQuODQzNjUxKSI+CiAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4yNjk5MjQxLDAsMCwtMS4yNjk5MjQxLDMuMzY2MjMwNywyMDguMTI0OTQpIj4KICAgPGcgdHJhbnNmb3JtPSJzY2FsZSgwLjEsMC4xKSI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiMwMDc1OEYiIGQ9Im03MzMuMDcsMzE5LjMyLTY0LjgzMiwwYy0yLjI4LDEwOS40My04LjYsMjEyLjMzLTE4LjkzLDMwOC43MmgtMC41NzEwNGwtOTguNzExLTMwOC43MmgtNDkuMzYzbC05OC4xMTMsMzA4LjcyaC0wLjU3OGMtNy4yOC05Mi41Ny0xMS44Ni0xOTUuNDctMTMuNzctMzA4LjcyaC01OS4xMTNjMy44MiwxMzcuNzMsMTMuMzgsMjY2Ljg0LDI4LjY4LDM4Ny4zNmg4MC4zNTZsOTMuNTM1LTI4NC42MmgwLjU3Mzk3bDk0LjEwOSwyODQuNjJoNzYuODg3YzE2LjgzNi0xNDEuMTUsMjYuNzc4LTI3MC4zLDI5LjgzMi0zODcuMzYiLz4KICAgIDxwYXRoIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iIzAwNzU4RiIgZD0ibTEwMTQuMyw2MDUuMTFjLTI2LjQwMS0xNDMuMjUtNjEuMjI1LTI0Ny4zNS0xMDQuNDUtMzEyLjI5LTMzLjY3OS01MC4wMzktNzAuNTc0LTc1LjA1OC0xMTAuNzUtNzUuMDU4LTEwLjcxLDAtMjMuOTE3LDMuMjI2LTM5LjU4OSw5LjYzNnYzNC41MzJjNy42NTYtMS4xMjEsMTYuNjQtMS43MTksMjYuOTcyLTEuNzE5LDE4Ljc0MywwLDMzLjg0OCw1LjE4LDQ1LjM0LDE1LjUxOSwxMy43NjIsMTIuNTk4LDIwLjY0OSwyNi43NTgsMjAuNjQ5LDQyLjQ1LDAsMTAuNzE4LTUuMzcyLDMyLjcxMS0xNi4wNjcsNjUuOThsLTcxLjE1MiwyMjAuOTVoNjMuNjkxbDUxLjA2Ny0xNjUuMjVjMTEuNDcyLTM3LjUxOSwxNi4yNTctNjMuNzExLDE0LjM0My03OC42NCwyNy45Myw3NC42MDEsNDcuNDQyLDE1NS45LDU4LjU0MywyNDMuODloNjEuNDAxIi8+CiAgICA8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiNGMjkxMTEiIGQ9Im0xMjk4LjMsNDI2LjY5YzAtMzIuODUxLTEyLjA3LTU5LjgyLTM2LjEzLTgwLjkyMS0yNC4wOC0yMS4wMDgtNTYuNDMtMzEuNTQtOTYuOTQtMzEuNTQtMzcuODksMC03NC42MSwxMi4xMjItMTEwLjE4LDM2LjE2OGwxNi42NCwzMy4yNzRjMzAuNjEtMTUuMzAxLDU4LjMxLTIyLjk0Miw4My4xOC0yMi45NDIsMjMuMzMsMCw0MS41OSw1LjE5Miw1NC44LDE1LjQ1LDEzLjE4LDEwLjMzMiwyMS4wOCwyNC43NDIsMjEuMDgsNDMuMDE5LDAsMjMtMTYuMDQsNDIuNjYtNDUuNDcsNTkuMTUzLTI3LjE3LDE0LjkxLTgxLjQ3LDQ2LjAzOS04MS40Nyw0Ni4wMzktMjkuNDIsMjEuNDYxLTQ0LjE3LDQ0LjQ4OC00NC4xNyw4Mi40MjksMCwzMS4zNzksMTEsNTYuNzQyLDMyLjk3LDc2LjAzOSwyMi4wMiwxOS4zMzYsNTAuNDMsMjkuMDA0LDg1LjIyLDI5LjAwNCwzNS45NiwwLDY4LjY2LTkuNTk3LDk4LjExLTI4LjcyMmwtMTQuOTYtMzMuMjQzYy0yNS4yLDEwLjY4NC01MC4wNSwxNi4wNDctNzQuNTUsMTYuMDQ3LTE5Ljg4LDAtMzUuMi00Ljc3My00NS44OC0xNC4zNzUtMTAuNzQtOS41MTktMTcuMzgtMjEuNzY5LTE3LjM4LTM2LjY5OSwwLTIyLjk0MSwxNi4zOS00Mi44NCw0Ni42NS01OS42NTIsMjcuNTEtMTQuOTE4LDgzLjE0LTQ2LjY0OSw4My4xNC00Ni42NDksMzAuMjYtMjEuNDIyLDQ1LjM0LTQ0LjI2MSw0NS4zNC04MS44NzkiLz4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0YyOTExMSIgZD0ibTE0MTQuMiwzOTYuODFjLTE1LjY5LDI1LjI1LTIzLjU1LDY1Ljc2OS0yMy41NSwxMjEuNjQsMCw5Ny41MzksMjkuNjYsMTQ2LjM0LDg4Ljk1LDE0Ni4zNCwzMSwwLDUzLjc1LTExLjY3Miw2OC4zLTM0Ljk5MiwxNS42Ny0yNS4yNjIsMjMuNTMtNjUuNDMsMjMuNTMtMTIwLjUyLDAtOTguMzItMjkuNjYtMTQ3LjUtODguOTUtMTQ3LjUtMzAuOTksMC01My43NSwxMS42Ni02OC4yOCwzNS4wMjhtMjMwLjY4LTg2LjgyOS03MS4yLDM1LjExYzYuMzQwMSw1LjE5OSwxMi4zNiwxMC44MDgsMTcuODEsMTcuMzAxLDMwLjIzLDM1LjUzOSw0NS4zNiw4OC4xNCw0NS4zNiwxNTcuNzgsMCwxMjguMTUtNTAuMzEsMTkyLjI2LTE1MC45MiwxOTIuMjYtNDkuMzUsMC04Ny44MS0xNi4yNS0xMTUuMzUtNDguNzk3LTMwLjI0LTM1LjU4Mi00NS4zNC04Ny45ODUtNDUuMzQtMTU3LjIzLDAtNjguMDg5LDEzLjM4LTExOC4wNCw0MC4xNi0xNDkuNzcsMjQuNC0yOC42OCw2MS4zLTQzLjA0LDExMC43LTQzLjA0LDE4LjQzLDAsMzUuMzQsMi4yNjksNTAuNzEsNi44MDhsOTIuNzItNTMuOTU3LDI1LjI4LDQzLjUzOSIvPgogICAgPHBhdGggZmlsbC1ydWxlPSJub256ZXJvIiBmaWxsPSIjRjI5MTExIiBkPSJtMTg3Ny4zLDMxOS4zMi0xODQuMTksMCwwLDM4Ny4zNiw2MS45OCwwLDAtMzM5LjcxLDEyMi4yMSwwLDAtNDcuNjQ5Ii8+CiAgICA8cGF0aCBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiNGMjkxMTEiIGQ9Im0xOTIxLjUsMzE5LjM2LDEwLjI3LDAsMCwzOS40MTEsMTMuNDQsMCwwLDguMDUtMzcuNjcsMCwwLTguMDUsMTMuOTYsMCwwLTM5LjQxMXptNzguMTUsMCw5LjY4MDEsMCwwLDQ3LjQ2MS0xNC41NiwwLTExLjg1LTMyLjM1MS0xMi45LDMyLjM1MS0xNC4wMywwLDAtNDcuNDYxLDkuMTU5OSwwLDAsMzYuMTIxLDAuNTIwMSwwLDEzLjUxLTM2LjEyMSw2Ljk3OTksMCwxMy40OSwzNi4xMjEsMC0zNi4xMjEiLz4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzAwNzU4RiIgZD0ibTE5NTUuMSw4MzYuNDNjLTM3LjQ2LDAuOTM2OTUtNjYuNDctMi44MDEtOTAuOC0xMy4xMDYtNy4wMi0yLjgwNS0xOC4yNC0yLjgwNS0xOS4yLTExLjY5OSwzLjc3LTMuNzM4LDQuMjIwMS05LjgxNyw3LjUyLTE0Ljk4OCw1LjYtOS4zNiwxNS40MS0yMS45NzcsMjQuMzItMjguNTQ3LDkuODI5OS03LjQ5MiwxOS42Ni0xNC45NTMsMjkuOTctMjEuNTA0LDE4LjI0LTExLjI4MSwzOC44NC0xNy44MDUsNTYuNi0yOS4wNDMsMTAuMzMtNi41NDMsMjAuNTktMTQuOTYxLDMwLjkyLTIyLDUuMTMtMy43NDIsOC4zOC05LjgzNiwxNC45Ni0xMi4xNTJ2MS40MTdjLTMuMzAwMSw0LjItNC4yMiwxMC4yODYtNy40OCwxNC45OTMtNC42Nyw0LjY0NC05LjM2LDguODgzLTE0LjA1LDEzLjU0My0xMy41OCwxOC4yNS0zMC40NSwzNC4xNDgtNDguNjYsNDcuMjU0LTE0Ljk5LDEwLjMyNC00Ny43NywyNC4zNjctNTMuODMsNDEuNjMyLDAsMC0wLjQ5LDAuNDk1OTctMC45NSwwLjk1Njk3LDEwLjMsMC45NTAwMSwyMi40OSw0LjcsMzIuMzEsNy41MzksMTUuODksNC4yLDMwLjQsMy4yNSw0Ni43OCw3LjQ1LDcuNSwxLjg4NiwxNC45OSw0LjI0MiwyMi41MSw2LjU0M3Y0LjI0MmMtOC40Nyw4LjQwNTktMTQuNTMsMTkuNjU2LTIzLjQyLDI3LjYwNS0yMy44NSwyMC41ODYtNTAuMDksNDAuNjk2LTc3LjIzLDU3LjU3MS0xNC41Myw5LjM2My0zMy4yNSwxNS40MTgtNDguNywyMy4zOTQtNS41ODk5LDIuODEzLTE0Ljk0LDQuMTk5LTE4LjIzLDguOTA2LTguNDMwMSwxMC4yOTMtMTMuMTMsMjMuODQ4LTE5LjIsMzYuMDM2LTEzLjU2LDI1LjcxMy0yNi42OSw1NC4yNTMtMzguMzcsODEuNDQzLTguNDE5OSwxOC4yNC0xMy41NywzNi40OC0yMy44Nyw1My4zNC00OC4yMyw3OS41OC0xMDAuNjMsMTI3Ljc2LTE4MS4xMywxNzUuMDQtMTcuMzIsOS44NC0zNy45MSwxNC4wNS01OS44OSwxOS4yLTExLjcyLDAuNDktMjMuNDEsMS40LTM1LjExLDEuODYtNy41LDMuMjktMTUsMTIuMTktMjEuNTQsMTYuNC0yNi42OSwxNi44NC05NS40Niw1My4zNC0xMTUuMTMsNS4xNC0xMi42NC0zMC40NCwxOC43Mi02MC4zOCwyOS40OS03NS44Myw3Ljk0OTktMTAuNzUsMTguMjYtMjIuOTQsMjMuODUtMzUuMDksMy4yODAxLTcuOTYsNC4yMi0xNi40LDcuNTEtMjQuODEsNy40OC0yMC41OSwxNC40OS00My41MywyNC4zNC02Mi43Myw1LjEzLTkuODI5OSwxMC43NC0yMC4xNCwxNy4yOS0yOC45OSwzLjc3OTktNS4xNzk5LDEwLjMxLTcuNDksMTEuNzItMTUuOTQtNi41My05LjM1LTcuMDQtMjMuMzktMTAuNzgtMzUuMS0xNi44NC01Mi44OS0xMC4zLTExOC40MSwxMy41OC0xNTcuMjUsNy40Ny0xMS42OTksMjUuMjgtMzcuNDQ5LDQ5LjE1LTI3LjU5NywyMS4wNiw4LjQwOTgsMTYuMzgsMzUuMDg5LDIyLjQ2LDU4LjQ3NiwxLjM5OTksNS42NTYyLDAuNDU5OSw5LjM2NjgsMy4yNiwxMy4xMDZ2LTAuOTQ1OTJjNi41NDk5LTEzLjA4NiwxMy4xMi0yNS42OTEsMTkuMi0zOC44NCwxNC41My0yMi45MSwzOS43OC00Ni43ODUsNjAuODYtNjIuNjgzLDExLjItOC40NTcsMjAuMS0yMi45NDIsMzQuMTQtMjguMTA2djEuNDE0aC0wLjkyYy0yLjgyLDQuMTk5OC03LjAxOTksNi4wODYtMTAuNzcsOS4zNDc4LTguNDIwMSw4LjQyOTktMTcuNzYsMTguNzMxLTI0LjM0LDI4LjA4Ni0xOS42NSwyNi4xOTktMzYuOTksNTUuMjM0LTUyLjQsODUuMTg0LTcuNTA5OSwxNC41NDMtMTQuMDUsMzAuNDQxLTIwLjE0LDQ0Ljk0MS0yLjgwMDEsNS41OTAxLTIuODAwMSwxNC4wMzktNy40OTAxLDE2Ljg0LTcuMDM5OS0xMC4yODUtMTcuMzEtMTkuMTkxLTIyLjQ1LTMxLjc4OS04LjktMjAuMTQ5LTkuODI5OS00NC45NDktMTMuMTMtNzAuNzAzLTEuODYtMC40ODg5NS0wLjkyLDAtMS44Ni0wLjkyOTk5LTE0Ljk2LDMuNzQxOS0yMC4xMSwxOS4xODQtMjUuNzQsMzIuMjQ2LTE0LjA0LDMzLjI3NC0xNi40LDg2LjYyNy00LjIwOTksMTI1LjAxLDMuMjYsOS44MTAxLDE3LjM0LDQwLjcsMTEuNyw1MC4wNi0yLjgyOTksOC45Mjk5LTEyLjE4LDE0LjAzLTE3LjMyLDIxLjA4LTYuMDcwMSw4Ljg5LTEyLjY2LDIwLjEtMTYuODMsMjkuOTUtMTEuMjQsMjYuMi0xNi44OSw1NS4yMy0yOS4wMiw4MS40My01LjYyLDEyLjE5LTE1LjQ3LDI0LjgzLTIzLjQsMzYuMDQtOC45MSwxMi42NC0xOC43MywyMS41My0yNS43NiwzNi40OS0yLjMyMDEsNS4xNi01LjYwMDEsMTMuNTktMS44NywxOS4xOSwwLjkxOTksMy43NSwyLjgxOTksNS4xNjAxLDYuNTY5OSw2LjEwMDEsNi4wNTAxLDUuMTQ5OSwyMy4zOS0xLjM5LDI5LjQ2LTQuMiwxNy4zMy03LDMxLjg0LTEzLjU5LDQ2LjMzLTIzLjQsNi41NTk5LTQuNjg5OSwxMy41OC0xMy41OCwyMS45OS0xNS45NGg5Ljg0OTljMTQuOTctMy4yNSwzMS44My0wLjkxLDQ1Ljg4LTUuMTQsMjQuNzktNy45NSw0Ny4yNS0xOS42NSw2Ny4zOS0zMi4yOSw2MS4yOS0zOC44NSwxMTEuODQtOTQuMDksMTQ1Ljk5LTE2MC4wNyw1LjYzLTEwLjc1LDcuOTktMjAuNTksMTMuMTMtMzEuOCw5LjgzLTIyLjk4LDIyLjAxLTQ2LjM4LDMxLjgyLTY4LjgyMyw5LjgyMDEtMjIsMTkuMi00NC40NDYsMzMuMjYtNjIuNzI3LDctOS44MTIsMzUuMDktMTQuOTYxLDQ3LjczLTIwLjExMyw5LjM0MDEtNC4xOTksMjMuODctNy45NDksMzIuMy0xMy4wOSwxNS45MS05LjgxMiwzMS43OS0yMS4wNjIsNDYuNzktMzEuODQ0LDcuNDY5OS01LjYxNywzMC44OC0xNy4zMDQsMzIuMjktMjYuNjc5Ii8+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMwMDc1OEYiIGQ9Im0xNDc3LjcsMTI0My4yYy03LjkzOTksMC0xMy41NC0wLjk2LTE5LjE5LTIuMzUwMXYtMC45Mzk5aDAuOTFjMy43Nzk5LTcuNDcsMTAuMzQtMTIuNjYsMTQuOTgtMTkuMiwzLjc3LTcuNDkwMiw3LjA0OTktMTQuOTUsMTAuNzktMjIuNDUsMC40NTk5LDAuNDU5OSwwLjkwOTksMC45NTAxLDAuOTA5OSwwLjk1MDEsNi41OTk5LDQuNjU5OSw5Ljg3LDEyLjE0LDkuODcsMjMuMzktMi44MywzLjMwMDEtMy4yNzAxLDYuNTUwMS01LjYzLDkuODQwMS0yLjgsNC42Njk5LTguODksNy4wMS0xMi42NCwxMC43NiIvPgogICA8L2c+CiAgPC9nPgogPC9nPgo8L3N2Zz4K" class="fa">
+                </div>
+                <div class="t-c text-light">
+                    MySQL
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <img src="https://www.json.org/img/json160.gif" class="fa">
+                </div>
+                <div class="t-c text-light">
+                    json
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont">
+                    <i class="fa-brands fa-node fa"></i>
+                </div>
+                 <div class="t-c text-light">
+                        nod.js
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-3 colcontent">
+            <div class="justify-items-center d-block">
+                <div class="img-cont" >
+                    <img src="https://www.gloriafood.com/wp-content/uploads/2021/08/duda-logo.png" class="fa">
+                </div>
+                <div class="t-c text-light">
+                        duda framework
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="background-color: #000000;">
+    <div class="row g-0">
+        <div class="col" style="display: flex;align-items: center;justify-content: center;">
+            <img class="img-cir" src="https://media.licdn.com/dms/image/C5103AQH1YbIOM4Bmyw/profile-displayphoto-shrink_800_800/0/1566260384849?e=1710979200&v=beta&t=LjAMUi_-iSsLHI4MoyQLIYuHXqeLeTonot9PPmZvd1o">
+        </div>
+            <div class="col pt-2">
+                <ul>
+                    <li>
+                        <div style="display:flex; align-items:center; justify-content: left;">
+                            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <label>Address:</label><br>Claytown Subdivision, Daro, Dumaguete City 6200, Negros Oriental, Philippines
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items:center; justify-content: left;">
+                            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div>
+                                <label>Mobile Number:</label><br/><a href="tel:+639668846962">+63 966-884-6962</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex; align-items:center; justify-content: left;">
+                            <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                <label>Email Address:</label><br/><a href="mailto:vandupio@gmail.com">vandupio@gmail.com</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col pt-2">
+                <a href="https://www.facebook.com/van.dupio" target="_blank">
+                    <div style="display:flex; align-items:center; justify-content: left;">
+                        <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div>
+                            https://www.facebook.com/van.dupio
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/van-dupio-95686887" target="_blank">
+                    <div style="display:flex; align-items:center; justify-content: left;">
+                        <div style="padding:1rem;font-size:2rem;color:rgb(255, 7, 110);">
+                           <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div>
+                            https://www.linkedin.com/in/van-dupio-95686887
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col"></div>
+
+        </div>
+</footer-->
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card-custom"),{
+        glare: true,
+        reverse: true,
+        "max-glare": 0.8
+      });
+    </script>
+</body>
+</html>
