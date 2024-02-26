@@ -56,7 +56,9 @@
   }
 /*--------------HTML element--------------*/
 /*--------------bootrap element--------------*/
-.mobile{display: none;}
+.mobile{
+    display: none;
+    visibility: hidden;}
   .jumbotron 
   {
     color: var(--hl-color);
@@ -480,6 +482,7 @@
         }
       .desk{
         display: none;
+        visibility: hidden;
         }
       .jumbotron{
         margin: 0px;
