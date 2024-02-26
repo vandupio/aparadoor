@@ -58,7 +58,11 @@
 /*--------------bootrap element--------------*/
 .mobile{
     display: none;
-    visibility: hidden;}
+    visibility: hidden;
+  }
+.desk{
+  visibility: visible;
+}
   .jumbotron 
   {
     color: var(--hl-color);
@@ -484,6 +488,9 @@
         display: none;
         visibility: hidden;
         }
+      .mobile{
+        visibility: visible;
+      }
       .jumbotron{
         margin: 0px;
         height: 35rem;
