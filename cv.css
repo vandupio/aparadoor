@@ -17,7 +17,7 @@
 }
 /*--------------HTML element--------------*/
   body{ 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://vandupio.github.io/cv/image/background.jpg")!important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://vandupio.github.io/cv/image/metal.jpg")!important;
     background-repeat: no-repeat;
     background-attachment: fixed;
   /*url("https://i.ibb.co/qF6dbHk/metal.jpg")!important; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
